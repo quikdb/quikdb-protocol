@@ -1,15 +1,15 @@
 # QuikDB Protocol
 
-Solana programs for QuikDB — community-powered cloud infrastructure.
+On-chain programs for QuikDB — community-powered cloud infrastructure.
 
-Anyone can contribute their machine as a compute node and earn token rewards. Developers and businesses deploy applications on that shared infrastructure. These Solana programs handle the on-chain layer: node registration, token rewards, and referral tracking.
+Anyone can contribute their machine as a compute node and earn token rewards. Developers and businesses deploy applications on that shared infrastructure. These programs handle the on-chain layer: node registration, token rewards, and referral tracking.
 
 ## Devnet Deployment
 
-| Resource | Address |
-|----------|---------|
+| Resource         | Address                                          |
+|------------------|--------------------------------------------------|
 | Deploy Authority | `ELQSFet2DZgP1vB9BkWnwGojrRsG4W4rysoVCPR6cQLH` |
-| Cluster | Solana Devnet |
+| Cluster          | Devnet                                           |
 
 > Program IDs and QUIKS token mint will be populated after `anchor deploy`.
 
@@ -48,8 +48,8 @@ On-chain referral tracking with tier-based reward multipliers.
 User deploys app
   -> QuikDB orchestrator selects community nodes (off-chain)
   -> Containers built and started on community nodes (off-chain)
-  -> Node registration + deployment records written to Solana (on-chain)
-  -> Node operators earn QUIKS tokens for uptime (on-chain)
+  -> Node registration + deployment records written on-chain
+  -> Node operators earn QUIKS tokens for uptime
   -> Referral bonuses distributed on-chain
 ```
 
@@ -82,7 +82,7 @@ bash scripts/create-quiks-token.sh
 ```
 programs/
   node-registry/    — community node registration, heartbeats, deployments
-  quiks-rewards/    — QUIKS SPL token minting and reward distribution
+  quiks-rewards/    — QUIKS token minting and reward distribution
   referral/         — referral codes, verification, tier-based rewards
 tests/              — TypeScript test suites for all programs
 scripts/            — devnet setup and token creation
@@ -90,4 +90,4 @@ scripts/            — devnet setup and token creation
 
 ## Tech Stack
 
-Rust, Anchor 0.30.1, Solana, SPL Token, TypeScript, Mocha/Chai
+Rust, Anchor 0.30.1, SPL Token, TypeScript, Mocha/Chai
