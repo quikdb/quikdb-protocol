@@ -12,7 +12,7 @@ Cloudflare Worker that routes all `*.quikdb.net` traffic to the correct containe
 
 Go HTTP server running on each community node (port 4222, exposed via Cloudflare Tunnel). Receives deploy requests from the orchestrator, clones repos (or downloads AI-generated tarballs from R2), builds Docker images via DinD sidecar, and starts containers with security hardening.
 
-**Production:** 3 EKS runner pods + 100 monitor nodes.
+**Production:** Live on EKS with community nodes.
 
 ## How This Connects to Solana
 
