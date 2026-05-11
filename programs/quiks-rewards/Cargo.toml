@@ -1,0 +1,20 @@
+[package]
+name = "quiks-rewards"
+version = "0.1.0"
+description = "QUIKS SPL token rewards for QuikDB node operators"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "quiks_rewards"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
