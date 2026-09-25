@@ -1,5 +1,7 @@
 # QuikDB Protocol
 
+*Turning idle potential into something the world can rely on.*
+
 On-chain programs for QuikDB — community-powered cloud infrastructure.
 
 Anyone can contribute their machine as a compute node and earn token rewards. Developers and businesses deploy applications on that shared infrastructure. These programs handle the on-chain layer: node registration, token rewards, and referral tracking.
